@@ -5,10 +5,27 @@ body {
     height: 100vh;
 }
 
+.main {
+    display: flex;
+    gap: 50px;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
-    height: 512px;
-    width: 512px;
+    margin: 0;
+    height: 544px;
+    width: 544px;
     border: 1px solid black;
+}
+
+.emptySquare {
+    height: 32px;
+    width: 32px;
+    border: 1px solid black;
+    margin: 0;
+}
+
+.onhover {
+    background-color: grey;
 }
