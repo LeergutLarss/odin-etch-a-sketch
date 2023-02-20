@@ -14,11 +14,11 @@ function createSquares() {
 } 
 //empty squares as array
 
-//checkSquares
-function checkSquares(grid) {
+//colorSquares
+function colorSquares(grid) {
     grid.forEach(square => {
         square.addEventListener("mouseover", () => {
-            square.classList.add("onhover");
+            square.style.background = 'grey';
         })
     });
     grid.forEach(square => {
@@ -28,20 +28,20 @@ function checkSquares(grid) {
     });          
 }
 
-/*
+
 //clearGrid
 function clearGrid(grid) {
     const clearButton = document.querySelector(".pannel button");
     clearButton.addEventListener("click", () => {
         grid.forEach(square => {
-            square.classList.
+            square.style.background = "white";
         });
     })
 }
-*/
+
 
 createSquares();
 const grid = document.querySelectorAll(".emptySquare");
-checkSquares(grid);
-
+colorSquares(grid);
+clearGrid(grid);
 
